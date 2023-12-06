@@ -1,6 +1,5 @@
 package commandPattern;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,7 +17,7 @@ public class RegisterCommand implements ICommand
     }
     @Override
     public void execute() {
-        Scanner sc= new Scanner(System.in); //System.in is a standard input stream
+        Scanner sc= new Scanner(System.in);
         String username = " ";
         String password = " ";
         while (true)
